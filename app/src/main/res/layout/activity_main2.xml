@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcff29"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/avengers_logo" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter mobile number"
+        android:textColorHint="#ff0006"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobileNumber"
+        android:layout_marginLeft="15dp"
+        android:textColorHint="#ff0006"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="6dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        >
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M a l e"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="#ff0006"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/etPassword" />
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F e m a l e"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+
+            android:textColor="#ff0006"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/etPassword" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnlOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="Log In"
+        android:background="@drawable/button_rounded"
+        android:textColor="#ff0006"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnlOGIN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:textColor="#ff0006"
+        android:text="Forgot Password"
+        />
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup"
+        android:text="Remember Me"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/regLater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="6dp"
+        android:text="Register Yourself"
+        android:textColor="#ff0006"
+        android:textSize="20dp" />
+
+</RelativeLayout>
